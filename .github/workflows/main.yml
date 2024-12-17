@@ -35,7 +35,7 @@ jobs:
       # Check Env Variables
       - name: Check Env
         run: |
-          echo $CSV_URL
+          echo $CSV_URL && echo ${{ mlflow.MLFLOW_TRACKING_URI }}
 
       # Install mlflow
       - name: Install dependencies
